@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
+  <test thread-count="5" name="Sample test(failed)">
+    <classes>
+      <class name="com.training.sanity.tests.ReturnOrder">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="validateDeleteOrder"/>
+          <include name="validateReturnOrder"/>
+          <include name="tearDown"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.ReturnOrder -->
+      <class name="com.training.sanity.tests.DeleteOrder">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.DeleteOrder -->
+      <class name="com.training.sanity.tests.FilterOrder">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.FilterOrder -->
+    </classes>
+  </test> <!-- Sample test(failed) -->
+</suite> <!-- Failed suite [Sample test Suite] -->
